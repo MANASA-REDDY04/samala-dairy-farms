@@ -1,0 +1,242 @@
+:root {
+  --farm-green: #4caf50;
+  --farm-wheat: #f5deb3;
+  --farm-white: #ffffff;
+  --text-dark: #2e2e2e;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-dark);
+  background-color: var(--farm-white);
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  background: var(--farm-green);
+  color: var(--farm-white);
+  padding: 5rem 1rem 7rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  color: var(--farm-wheat);
+}
+
+.hero-section a.button {
+  background-color: var(--farm-white);
+  color: var(--farm-green);
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.hero-section a.button:hover {
+  background-color: var(--farm-wheat);
+}
+
+/* Wavy curve background SVG */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: url('data:image/svg+xml;utf8,<svg width="100%" height="120" viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg"><path fill="%23f5deb3" d="M0,96L80,106.7C160,117,320,139,480,144C640,149,800,139,960,133.3C1120,128,1280,128,1360,128L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"/></svg>')
+    no-repeat bottom center;
+  background-size: cover;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Products Section */
+.products-section {
+  background-color: var(--farm-white);
+  padding: 4rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.products-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--farm-green);
+  margin-bottom: 3rem;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.product-card {
+  background-color: var(--farm-wheat);
+  border-radius: 0.75rem;
+  box-shadow: 0 6px 12px rgb(0 0 0 / 0.1);
+  overflow: hidden;
+  border: 1px solid #d7c9a5;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 1px solid #d7c9a5; /* optional: separate image from text */
+}
+
+.product-info {
+  padding: 1rem 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-info h3 {
+  font-size: 1.5rem;
+  color: var(--farm-green);
+  margin-bottom: 0.5rem;
+}
+
+.product-info p.price {
+  font-weight: 700;
+  color: var(--farm-green);
+  margin-bottom: 1rem;
+}
+
+.product-info p.description {
+  flex-grow: 1;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.product-info a.book-btn {
+  background-color: var(--farm-green);
+  color: var(--farm-white);
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.product-info a.book-btn:hover {
+  background-color: #388e3c;
+}
+
+/* Why Choose Us Section */
+.why-choose-section {
+  background-color: var(--farm-wheat);
+  padding: 4rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.why-choose-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--farm-green);
+  margin-bottom: 3rem;
+}
+
+.why-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.why-card {
+  background-color: var(--farm-white);
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  color: var(--text-dark);
+}
+
+.why-card svg {
+  width: 48px;
+  height: 48px;
+  stroke: var(--farm-green);
+  margin-bottom: 1rem;
+}
+
+.why-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--farm-green);
+}
+
+.why-card p {
+  font-size: 1rem;
+  color: #4a4a4a;
+}
+
+/* Call to Action Section */
+.cta-section {
+  background-color: var(--farm-green);
+  color: var(--farm-white);
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1.125rem;
+}
+
+.cta-section a.cta-button {
+  background-color: var(--farm-white);
+  color: var(--farm-green);
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.cta-section a.cta-button:hover {
+  background-color: var(--farm-wheat);
+}
+
+/* Responsive Text Scaling */
+@media (min-width: 768px) {
+  .hero-section h1 {
+    font-size: 4rem;
+  }
+  .products-section h2,
+  .why-choose-section h2,
+  .cta-section h2 {
+    font-size: 3rem;
+  }
+}

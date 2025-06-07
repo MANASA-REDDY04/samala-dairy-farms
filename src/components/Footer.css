@@ -1,0 +1,65 @@
+:root {
+  --farm-green: #4caf50;
+  --farm-dark-green: #1b4332; /* Deep farm green */
+  --farm-light-green: #cdeac0; /* Light green accent */
+  --farm-wheat: #f5deb3;
+  --farm-white: #ffffff;
+  --text-dark: #2e2e2e;
+}
+
+/* Footer Styling */
+footer {
+  background-color: var(--farm-dark-green);
+  color: var(--farm-white);
+  padding: 3rem 1rem;
+  font-family: "Segoe UI", sans-serif;
+}
+
+footer .footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+footer h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--farm-white);
+}
+
+footer p,
+footer a {
+  color: var(--farm-light-green);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+footer a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--farm-white);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--farm-light-green);
+}
