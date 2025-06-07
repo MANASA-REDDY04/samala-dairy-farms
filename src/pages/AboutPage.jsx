@@ -8,21 +8,21 @@ const AboutPage = () => {
       title: "Our Dairy",
       description:
         "Samala Venkat Reddy Dairy is committed to providing pure and fresh milk directly from our farm. Established with the vision of delivering quality dairy products, we take pride in maintaining high standards in animal care and milk processing.",
-      image: "./public/images/dairy2.jpg",
+      image: "/images/dairy2.jpg",
     },
     {
       id: "food-for-animals",
       title: "Food for Animals",
       description:
         "We believe that the quality of milk is directly related to the health of our animals. Our cows and buffaloes are fed with nutritious fodder grown on our own farm to ensure they remain healthy and produce the best quality milk. We prioritize organic feed and avoid harmful supplements.",
-      image: "./public/images/bfood1.jpg",
+      image: "/images/bfood1.jpg",
     },
     {
       id: "getting-fresh-milk",
       title: "Getting Fresh Milk",
       description:
         "Our milking process is designed to maintain the highest level of hygiene. We use modern equipment for milking and immediately cool the milk to preserve its freshness. The milk is delivered to our customers within hours of milking, ensuring they receive the freshest product possible.",
-      image: "./public/images/milk1.jpg",
+      image: "/images/milk1.jpg",
     },
   ];
 
