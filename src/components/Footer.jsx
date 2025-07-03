@@ -25,6 +25,9 @@ const Footer = () => {
               <li>
                 <Link to="/contact">Contact</Link>
               </li>
+              <li>
+                <Link to="/gallery">Gallery</Link>
+              </li>
             </ul>
           </div>
 
@@ -38,7 +41,7 @@ const Footer = () => {
               <strong>WhatsApp:</strong> 9848654545
             </p>
             <p>
-              <strong>Email:</strong> venkatreddydairy@gmail.com
+              <strong>Email:</strong> samaladairyfarms@gmail.com
             </p>
           </div>
         </div>
