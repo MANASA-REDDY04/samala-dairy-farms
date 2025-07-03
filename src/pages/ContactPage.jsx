@@ -20,7 +20,7 @@ const ContactPage = () => {
     e.preventDefault();
     const { name, email, phone, message } = formData;
 
-    const mailtoLink = `mailto:venkatreddydairy@gmail.com?subject=New Inquiry from ${name}&body=
+    const mailtoLink = `mailto:samaladairyfarms@gmail.com?subject=New Inquiry from ${name}&body=
 Name: ${name}%0D%0A
 Email: ${email}%0D%0A
 Phone: ${phone}%0D%0A
@@ -95,12 +95,12 @@ Message: ${message}`;
               <h3>Email</h3>
               <p>
                 <a
-                  href="mailto:venkatreddydairy@gmail.com"
+                  href="mailto:samaladairyfarms@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="contact-link"
                 >
-                  venkatreddydairy@gmail.com
+                  samaladairyfarms@gmail.com
                 </a>
               </p>
             </div>
@@ -182,11 +182,11 @@ Message: ${message}`;
           <div className="hours-grid">
             <div>
               <h3>Weekdays</h3>
-              <p>Monday - Friday: 6:00 AM - 8:00 PM</p>
+              <p>Monday - Friday: 3:00 AM - 8:00 PM</p>
             </div>
             <div>
               <h3>Weekends</h3>
-              <p>Saturday - Sunday: 7:00 AM - 7:00 PM</p>
+              <p>Saturday - Sunday: 3:00 AM - 8:00 PM</p>
             </div>
           </div>
           <p className="note">
